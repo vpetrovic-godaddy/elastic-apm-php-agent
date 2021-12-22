@@ -2,10 +2,16 @@
     "name" : "philkra/elastic-apm-php-agent",
     "description": "A php agent for Elastic APM v2 Intake API",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vpetrovic-godaddy/elastic-apm-php-agent"
+        }
+    ],
     "require" : {
         "php" : ">= 7.1",
         "guzzlehttp/guzzle": "6.*",
-        "ralouphie/getallheaders": "3.*",
+        "ralouphie/getallheaders": "2.0.5",
         "ext-curl" : "*",
         "ext-json": "*"
     },
