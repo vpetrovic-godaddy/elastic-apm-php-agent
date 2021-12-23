@@ -9,6 +9,7 @@
         }
     ],
     "require" : {
+        "philkra/elastic-apm-php-agent": "dev-master",
         "php" : ">= 7.1",
         "guzzlehttp/guzzle": "6.*",
         "ralouphie/getallheaders": "2.0.5",
