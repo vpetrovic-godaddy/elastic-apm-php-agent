@@ -335,7 +335,7 @@ class EventBean
         $envMask = $this->contexts['env'];
         $env = empty($envMask)
             ? $_SERVER
-            : array_intersect_key($_SERVER, array_flip($envMask));
+            : array_diff_key($_SERVER, array_flip($envMask));
 
         return $env;
     }
@@ -353,7 +353,7 @@ class EventBean
         $cookieMask = $this->contexts['cookies'] ?? [];
         return empty($cookieMask)
             ? $_COOKIE
-            : array_intersect_key($_COOKIE, array_flip($cookieMask));
+            : array_diff_key($_COOKIE, array_flip($cookieMask));
     }
 
     /**
